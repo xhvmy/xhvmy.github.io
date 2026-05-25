@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/System/Library/CoreServices/pbs -flush)",
+      "Skill(keybindings-help)",
+      "Skill(keybindings-help:*)",
+      "Bash(rm /Users/xhvmy/Documents/Data/FOLIO/.DS_Store /Users/xhvmy/Documents/Data/FOLIO/img/.DS_Store /Users/xhvmy/Documents/Data/FOLIO/img/portfolio/.DS_Store /Users/xhvmy/Documents/Data/FOLIO/img/IMG_1139.jpg /Users/xhvmy/Documents/Data/FOLIO/img/portfolio/Branding-1.jpg /Users/xhvmy/Documents/Data/FOLIO/img/portfolio/UI-1.jpg)",
+      "Bash(rmdir /Users/xhvmy/Documents/Data/FOLIO/.vscode)",
+      "WebSearch",
+      "Bash(mkdir -p /Users/xhvmy/Documents/Data/FOLIO/.vscode)",
+      "Bash(gh auth *)",
+      "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO status)",
+      "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO init)",
+      "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO add index.html style.css script.js work-detail.css work-detail.js .htaccess .gitignore .nojekyll img/ work/)",
+      "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO commit -m ' *)",
+      "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO remote -v)",
+      "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO log --oneline -3)",
+      "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO branch -vv)",
+      "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO ls-remote origin HEAD)",
+      "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO push -u origin main)",
+      "Bash(ls ~/.ssh/*.pub 2>/dev/null && echo \"SSH키 있음\" || echo \"SSH키 없음\")",
+      "Read(//Users/xhvmy/**)",
+      "Bash(ssh-keygen -t ed25519 -C \"haminn925@gmail.com\" -f ~/.ssh/id_ed25519 -N \"\")",
+      "Bash(ssh -T git@github.com)",
+      "Bash(ssh-keyscan github.com >> ~/.ssh/known_hosts 2>&1 && ssh -T git@github.com 2>&1)",
+      "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO remote set-url origin git@github.com:xhvmy/xhvmy.github.io.git)",
+      "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO rm .htaccess)",
+      "Bash(chmod +x /Users/xhvmy/Documents/Data/FOLIO/deploy.sh)",
+      "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO add deploy.sh .gitignore)",
+      "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO push origin main)"
+    ],
+    "additionalDirectories": [
+      "/Users/xhvmy/Documents/Data/FOLIO",
+      "/Users/xhvmy/.ssh"
+    ]
+  }
+}
