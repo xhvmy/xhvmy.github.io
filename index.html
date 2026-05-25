@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.emailjs.com;" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>임채형 — Designer</title>
   <meta name="description" content="임채형 포트폴리오 — Visual · UI/UX · Brand Designer. 시간이 지나도 가치가 남는 완성도 있는 디자인을 만듭니다." />
   <meta property="og:type" content="website" />
@@ -21,10 +23,10 @@
     rel="stylesheet" />
   <link rel="icon" href="img/favicon.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" integrity="sha384-O55L/6rhHr9CFvrxqv5luxOCcmVaBmETbZbJDP+Do8T0pztTACsFBD/IXCNkj7DV" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" integrity="sha384-SALc35EccAf6RzGw4iNsyj7kTPr33K7RoGzYu+7heZhT8s0GZouafRiCg1qy44AS" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
@@ -382,7 +384,7 @@
       <span data-i18n="contact-send-btn">메일 보내기</span><span>→</span>
     </button>
     <div class="contact-socials">
-      <a href="https://instagram.com/xhvmy" target="_blank" rel="noopener" class="ig-btn">
+      <a href="https://instagram.com/xhvmy" target="_blank" rel="noopener noreferrer" class="ig-btn">
         <svg class="ig-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
           stroke-linecap="round" stroke-linejoin="round">
           <rect x="2" y="2" width="20" height="20" rx="5" />
@@ -410,13 +412,13 @@
       <h3 class="modal-title" data-i18n="modal-title">메시지 보내기</h3>
       <form class="contact-form" id="contact-form" novalidate>
         <div class="form-group">
-          <input type="text" name="from_name" placeholder="이름" data-i18n-ph="form-ph-name" autocomplete="off" />
+          <input type="text" name="from_name" placeholder="이름" data-i18n-ph="form-ph-name" autocomplete="off" maxlength="100" />
         </div>
         <div class="form-group">
-          <input type="email" name="reply_to" placeholder="이메일" data-i18n-ph="form-ph-email" autocomplete="off" />
+          <input type="email" name="reply_to" placeholder="이메일" data-i18n-ph="form-ph-email" autocomplete="off" maxlength="254" />
         </div>
         <div class="form-group">
-          <textarea name="message" placeholder="메시지를 입력해주세요" data-i18n-ph="form-ph-msg"></textarea>
+          <textarea name="message" placeholder="메시지를 입력해주세요" data-i18n-ph="form-ph-msg" maxlength="2000"></textarea>
         </div>
         <button type="submit" class="form-submit">
           <span data-i18n="form-submit">보내기</span><span>→</span>
@@ -435,7 +437,7 @@
   </footer>
 
   <!-- ── 플로팅 인스타그램 버튼 ── -->
-  <a href="https://instagram.com/xhvmy" target="_blank" rel="noopener" id="ig-float" aria-label="Instagram">
+  <a href="https://instagram.com/xhvmy" target="_blank" rel="noopener noreferrer" id="ig-float" aria-label="Instagram">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
       stroke-linejoin="round">
       <rect x="2" y="2" width="20" height="20" rx="5" />

@@ -27,7 +27,13 @@
       "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO rm .htaccess)",
       "Bash(chmod +x /Users/xhvmy/Documents/Data/FOLIO/deploy.sh)",
       "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO add deploy.sh .gitignore)",
-      "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO push origin main)"
+      "Bash(git -C /Users/xhvmy/Documents/Data/FOLIO push origin main)",
+      "Bash(curl -sf \"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js\")",
+      "Bash(openssl dgst *)",
+      "Bash(openssl enc *)",
+      "Bash(curl -sf \"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js\")",
+      "Bash(curl -sf \"https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js\")",
+      "Bash(curl -sf \"https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js\")"
     ],
     "additionalDirectories": [
       "/Users/xhvmy/Documents/Data/FOLIO",

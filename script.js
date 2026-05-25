@@ -804,9 +804,21 @@ emailjs.init({ publicKey: EJS_PUBLIC_KEY });
     if (hasError) return;
 
     const submitSpan = form.querySelector('[data-i18n="form-submit"]');
+
+    const RATE_KEY = '_cl_last';
+    const COOLDOWN = 60000;
+    const lastSent = parseInt(localStorage.getItem(RATE_KEY) || '0', 10);
+    const remaining = Math.ceil((COOLDOWN - (Date.now() - lastSent)) / 1000);
+    if (Date.now() - lastSent < COOLDOWN) {
+      submitSpan.textContent = window._lang === 'en' ? `Wait ${remaining}s` : `${remaining}초 후 재시도`;
+      setTimeout(() => { submitSpan.textContent = L['form-submit']; }, 2500);
+      return;
+    }
+
     submitSpan.textContent = L['form-submitting'];
     try {
       await emailjs.sendForm(EJS_SERVICE_ID, EJS_TEMPLATE_ID, form);
+      localStorage.setItem(RATE_KEY, String(Date.now()));
       form.style.display = 'none';
       success.style.display = 'block';
       gsap.from(success, { opacity: 0, y: 16, duration: .5, ease: 'power3.out' });
