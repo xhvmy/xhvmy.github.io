@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>임채형 — Designer</title>
+  <meta name="description" content="임채형 포트폴리오 — Visual · UI/UX · Brand Designer. 시간이 지나도 가치가 남는 완성도 있는 디자인을 만듭니다." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="임채형 — Designer" />
+  <meta property="og:description" content="Visual · UI/UX · Brand Designer. 시간이 지나도 가치가 남는 완성도 있는 디자인을 만듭니다." />
+  <meta property="og:image" content="https://xhvmy.github.io/img/portfolio/Fitz-Detail-1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="임채형 — Designer" />
+  <meta name="twitter:description" content="Visual · UI/UX · Brand Designer. 시간이 지나도 가치가 남는 완성도 있는 디자인을 만듭니다." />
+  <meta name="twitter:image" content="https://xhvmy.github.io/img/portfolio/Fitz-Detail-1.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ── CURSOR ── -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- ── INTRO ── -->
+  <div id="intro">
+    <div class="intro-text"><span>임채형</span></div>
+    <div class="intro-text"><span style="color:var(--accent)">Designer</span></div>
+    <div class="intro-bar">
+      <div class="intro-bar-fill"></div>
+    </div>
+  </div>
+
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="#hero" class="nav-logo">LCH</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="lang-toggle-wrapper" id="lang-toggle-wrapper">
+      <button class="lang-btn" data-lang="ko">KO</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── MOBILE DRAWER ── -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#work" class="mobile-link">Work</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-eyebrow">Visual · UI/UX · Brand Designer</div>
+    <h1 class="hero-title">
+      <span class="line"><span>LIM</span></span>
+      <span class="line"><span>CHAE</span></span>
+      <span class="line"><span style="color:var(--accent)">HYUNG</span></span>
+    </h1>
+    <div class="hero-sub">
+      <p class="hero-desc" data-i18n="hero-desc">시간이 지나도 가치가 남는,<br />완성도 있는 결과를 남깁니다.</p>
+      <div class="hero-scroll">Scroll</div>
+    </div>
+  </section>
+
+  <!-- ── TICKER ── -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span class="ticker-item"><span class="dot">✦</span>UI/UX Design</span>
+      <span class="ticker-item"><span class="dot">✦</span>Visual Design</span>
+      <span class="ticker-item"><span class="dot">✦</span>Brand Identity</span>
+      <span class="ticker-item"><span class="dot">✦</span>Editorial Design</span>
+      <span class="ticker-item"><span class="dot">✦</span>Web Design</span>
+      <span class="ticker-item"><span class="dot">✦</span>Packaging</span>
+      <span class="ticker-item"><span class="dot">✦</span>Typography</span>
+      <span class="ticker-item"><span class="dot">✦</span>Figma · Illustrator · Photoshop</span>
+      <span class="ticker-item"><span class="dot">✦</span>UI/UX Design</span>
+      <span class="ticker-item"><span class="dot">✦</span>Visual Design</span>
+      <span class="ticker-item"><span class="dot">✦</span>Brand Identity</span>
+      <span class="ticker-item"><span class="dot">✦</span>Editorial Design</span>
+      <span class="ticker-item"><span class="dot">✦</span>Web Design</span>
+      <span class="ticker-item"><span class="dot">✦</span>Packaging</span>
+      <span class="ticker-item"><span class="dot">✦</span>Typography</span>
+      <span class="ticker-item"><span class="dot">✦</span>Figma · Illustrator · Photoshop</span>
+    </div>
+  </div>
+
+  <!-- ── ABOUT (+ Experience) ── -->
+  <section id="about">
+    <div class="section-label">About</div>
+
+    <!-- 기본 정보 -->
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <img src="img/IMG_7218.jpg" alt="임채형" loading="lazy" />
+        <div class="about-img-overlay"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-name" data-i18n="about-name">임채형</div>
+        <p class="about-bio" data-i18n="about-bio">
+          세심한 관찰과 공감을 기반으로,<br />
+          <strong>과하지 않은 표현 속에서 자연스럽게 전달되는 디자인</strong>을 추구합니다.<br /><br />
+          UI/UX부터 브랜딩, 편집 디자인까지 — 시각적 커뮤니케이션의 모든 영역에서 완성도 있는 결과를 만들어냅니다.
+        </p>
+        <div class="about-meta">
+          <div class="meta-item">
+            <div class="meta-label" data-i18n="meta-birth">생년월일</div>
+            <div class="meta-val">2005. 09. 25</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label" data-i18n="meta-location">위치</div>
+            <div class="meta-val" data-i18n="meta-val-location">인천광역시 부평구</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label" data-i18n="meta-education">학력</div>
+            <div class="meta-val" data-i18n="meta-val-school">한국폴리텍대학 인천캠퍼스<br />산업디자인과</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label" data-i18n="meta-contact-label">연락처</div>
+            <div class="meta-val">lim0925lim0925@gmail.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 경력 & 학력 -->
+    <div class="about-exp">
+      <div class="exp-cols">
+        <div>
+          <div class="exp-col-title">Work Experience</div>
+          <div class="exp-item">
+            <div>
+              <div class="exp-role" data-i18n="exp1-role">그래픽 디자인 강사</div>
+              <div class="exp-org" data-i18n="exp1-org">글로벌숙련기술진흥원</div>
+              <div class="exp-desc" data-i18n="exp1-desc">포토샵·일러스트레이터 등 그래픽 디자인 툴 활용 교육 진행. 수강생 작업 피드백 및 실무 중심 커리큘럼 운영.
+              </div>
+            </div>
+            <div class="exp-date">2023</div>
+          </div>
+          <div class="exp-item">
+            <div>
+              <div class="exp-role" data-i18n="exp2-role">시각디자인 총괄</div>
+              <div class="exp-org" data-i18n="exp2-org">샘튼</div>
+              <div class="exp-desc" data-i18n="exp2-desc">브랜드 비주얼 아이덴티티 수립부터 SNS 콘텐츠, 인쇄물, 디지털 마케팅 디자인까지 시각 커뮤니케이션 전반
+                총괄.</div>
+            </div>
+            <div class="exp-date">2022 — 2024</div>
+          </div>
+        </div>
+        <div>
+          <div class="exp-col-title">Education</div>
+          <div class="exp-item">
+            <div>
+              <div class="exp-role" data-i18n="edu1-role">산업디자인과</div>
+              <div class="exp-org" data-i18n="edu1-org">한국폴리텍대학 인천캠퍼스</div>
+              <div class="exp-desc" data-i18n="edu1-desc">UI/UX, 제품·시각디자인 전공. 실무 중심 교육 과정을 통해 다양한 디자인 분야의 실전 역량을 쌓고 졸업.
+              </div>
+            </div>
+            <div class="exp-date">2024 — 2026</div>
+          </div>
+          <div class="exp-item">
+            <div>
+              <div class="exp-role" data-i18n="edu2-role">과학중점고등학교</div>
+              <div class="exp-org" data-i18n="edu2-org">인천산곡고등학교</div>
+              <div class="exp-desc" data-i18n="edu2-desc">재학 중 디자인에 관심을 갖고 독학으로 그래픽 툴을 익히며 포트폴리오 제작을 시작.</div>
+            </div>
+            <div class="exp-date">2021 — 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="section-label">Skills</div>
+
+    <div class="skills-block skills-block--single">
+      <!-- Design Tools -->
+      <div class="skills-group">
+        <div class="skills-group-title">Design Tools</div>
+        <div class="skills-cols">
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">Illustrator</span><span class="skill-pct">95%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="95"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">Figma</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">Photoshop</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">Adobe XD</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">Premiere Pro</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">InDesign</span><span class="skill-pct">75%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="75"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">After Effects</span><span class="skill-pct">70%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="70"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── WORK ── -->
+  <section id="work">
+    <div class="work-header">
+      <h2 class="work-title">Selected<br />Works</h2>
+      <span class="work-count">09 Projects</span>
+    </div>
+    <div class="work-filters">
+      <button class="wf-btn active" data-filter="all">All</button>
+      <button class="wf-btn" data-filter="ui-ux">UI / UX</button>
+      <button class="wf-btn" data-filter="web-design">Web Design</button>
+      <button class="wf-btn" data-filter="brand-identity">Brand</button>
+      <button class="wf-btn" data-filter="editorial">Editorial</button>
+      <button class="wf-btn" data-filter="packaging">Packaging</button>
+    </div>
+    <div class="work-grid">
+      <a class="work-item" data-cat="ui-ux" href="work/fitz.html">
+        <img src="img/portfolio/Fitz-Detail-1.jpg" alt="Fitz" loading="lazy" />
+        <div class="work-info">
+          <div class="work-cat">UI/UX</div>
+          <div class="work-name">Fitz</div>
+        </div>
+        <div class="work-arrow"><svg viewBox="0 0 24 24">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg></div>
+      </a>
+      <a class="work-item" data-cat="web-design" href="work/bape.html">
+        <img src="img/portfolio/BAPE-Detail.jpg" alt="BAPE × SANRIO" loading="lazy" />
+        <div class="work-info">
+          <div class="work-cat">Web Design</div>
+          <div class="work-name">BAPE × SANRIO</div>
+        </div>
+        <div class="work-arrow"><svg viewBox="0 0 24 24">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg></div>
+      </a>
+      <a class="work-item wide" data-cat="editorial" href="work/apxgp.html">
+        <img src="img/portfolio/APXGP.jpg" alt="APXGP" loading="lazy" />
+        <div class="work-info">
+          <div class="work-cat">Editorial Design</div>
+          <div class="work-name">APXGP</div>
+        </div>
+        <div class="work-arrow"><svg viewBox="0 0 24 24">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg></div>
+      </a>
+      <a class="work-item" data-cat="packaging" href="work/chromehearts.html">
+        <img src="img/portfolio/package-1.jpg" alt="CHROMEHEARTS" loading="lazy" />
+        <div class="work-info">
+          <div class="work-cat">Packaging</div>
+          <div class="work-name">CHROMEHEARTS</div>
+        </div>
+        <div class="work-arrow"><svg viewBox="0 0 24 24">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg></div>
+      </a>
+      <a class="work-item" data-cat="web-design" href="work/porsche.html">
+        <img src="img/portfolio/Porsche-Detail-1.jpg" alt="Porsche" loading="lazy" />
+        <div class="work-info">
+          <div class="work-cat">Web Design</div>
+          <div class="work-name">Porsche</div>
+        </div>
+        <div class="work-arrow"><svg viewBox="0 0 24 24">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg></div>
+      </a>
+      <a class="work-item" data-cat="web-design" href="work/apple.html">
+        <img src="img/portfolio/Apple-iPhone-Detail.jpg" alt="Apple" loading="lazy" />
+        <div class="work-info">
+          <div class="work-cat">Web Design</div>
+          <div class="work-name">Apple</div>
+        </div>
+        <div class="work-arrow"><svg viewBox="0 0 24 24">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg></div>
+      </a>
+      <a class="work-item" data-cat="ui-ux" href="work/riff.html">
+        <img src="img/portfolio/RIFF.jpg" alt="RIFF" loading="lazy" />
+        <div class="work-info">
+          <div class="work-cat">UI/UX</div>
+          <div class="work-name">RIFF</div>
+        </div>
+        <div class="work-arrow"><svg viewBox="0 0 24 24">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg></div>
+      </a>
+      <a class="work-item" data-cat="brand-identity" href="work/linen.html">
+        <img src="img/portfolio/linen-hero.jpg" alt="LINEN" loading="lazy" />
+        <div class="work-info">
+          <div class="work-cat">Brand Identity</div>
+          <div class="work-name">LINEN</div>
+        </div>
+        <div class="work-arrow"><svg viewBox="0 0 24 24">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg></div>
+      </a>
+      <a class="work-item" data-cat="editorial" href="work/poster.html">
+        <img src="img/portfolio/poster1.jpg" alt="POSTER" loading="lazy" />
+        <div class="work-info">
+          <div class="work-cat">Editorial Design</div>
+          <div class="work-name">POSTER</div>
+        </div>
+        <div class="work-arrow"><svg viewBox="0 0 24 24">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="contact-label">Contact</div>
+    <h2 class="contact-title">Let's<br /><span class="hi">Work</span><br />Together</h2>
+    <button class="contact-email" id="copy-email" aria-label="이메일 주소 복사">
+      <span class="email-text">lim0925lim0925@gmail.com</span>
+      <svg class="email-copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+        stroke-linecap="round" stroke-linejoin="round">
+        <rect x="9" y="9" width="13" height="13" rx="2" />
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+      </svg>
+    </button>
+    <div id="copy-toast">Copied ✓</div>
+    <button class="contact-btn" id="open-contact-modal">
+      <span data-i18n="contact-send-btn">메일 보내기</span><span>→</span>
+    </button>
+    <div class="contact-socials">
+      <a href="https://instagram.com/xhvmy" target="_blank" rel="noopener" class="ig-btn">
+        <svg class="ig-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" />
+          <circle cx="12" cy="12" r="4" />
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+        </svg>
+        <span class="ig-handle">@xhvmy</span>
+        <span class="ig-arrow">↗</span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ── CONTACT MODAL ── -->
+  <div id="contact-modal" role="dialog" aria-modal="true">
+    <div class="modal-overlay"></div>
+    <div class="modal-box">
+      <button class="modal-close" aria-label="닫기">
+        <svg viewBox="0 0 24 24">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+      <div class="modal-label">Get in touch</div>
+      <h3 class="modal-title" data-i18n="modal-title">메시지 보내기</h3>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-group">
+          <input type="text" name="from_name" placeholder="이름" data-i18n-ph="form-ph-name" autocomplete="off" />
+        </div>
+        <div class="form-group">
+          <input type="email" name="reply_to" placeholder="이메일" data-i18n-ph="form-ph-email" autocomplete="off" />
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="메시지를 입력해주세요" data-i18n-ph="form-ph-msg"></textarea>
+        </div>
+        <button type="submit" class="form-submit">
+          <span data-i18n="form-submit">보내기</span><span>→</span>
+        </button>
+      </form>
+      <div class="form-success">
+        <div class="success-icon">✓</div>
+        <p data-i18n="form-success-msg">메시지가 전송되었습니다.<br />빠른 시일 내에 답변 드리겠습니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <span class="footer-copy">© 2026 Lim Chae Hyung. All rights reserved.</span>
+  </footer>
+
+  <!-- ── 플로팅 인스타그램 버튼 ── -->
+  <a href="https://instagram.com/xhvmy" target="_blank" rel="noopener" id="ig-float" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+      stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+    </svg>
+    <span>Instagram</span>
+  </a>
+
+  <button id="back-to-top" aria-label="맨 위로">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
